@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58758D271A082A6F00393206 /* stamp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 58758D261A082A6F00393206 /* stamp.jpg */; };
+		58758D291A082A7B00393206 /* BlueLagoon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 58758D281A082A7B00393206 /* BlueLagoon.jpg */; };
 		588B827919F06F8700C76C4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588B827819F06F8700C76C4F /* AppDelegate.swift */; };
 		588B827B19F06F8700C76C4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588B827A19F06F8700C76C4F /* ViewController.swift */; };
 		588B827E19F06F8700C76C4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 588B827C19F06F8700C76C4F /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		58758D261A082A6F00393206 /* stamp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stamp.jpg; sourceTree = "<group>"; };
+		58758D281A082A7B00393206 /* BlueLagoon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BlueLagoon.jpg; sourceTree = "<group>"; };
 		588B827319F06F8700C76C4F /* Postcard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Postcard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		588B827719F06F8700C76C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		588B827819F06F8700C76C4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 		588B827619F06F8700C76C4F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				58758D281A082A7B00393206 /* BlueLagoon.jpg */,
+				58758D261A082A6F00393206 /* stamp.jpg */,
 				588B827719F06F8700C76C4F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,6 +199,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				588B827E19F06F8700C76C4F /* Main.storyboard in Resources */,
+				58758D271A082A6F00393206 /* stamp.jpg in Resources */,
+				58758D291A082A7B00393206 /* BlueLagoon.jpg in Resources */,
 				588B828319F06F8700C76C4F /* LaunchScreen.xib in Resources */,
 				588B828019F06F8700C76C4F /* Images.xcassets in Resources */,
 			);
@@ -407,6 +415,7 @@
 				588B829419F06F8700C76C4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		588B829519F06F8700C76C4F /* Build configuration list for PBXNativeTarget "PostcardTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +424,7 @@
 				588B829719F06F8700C76C4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
