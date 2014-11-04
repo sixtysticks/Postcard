@@ -10,17 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // Time to pretend
-    
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    
     @IBOutlet weak var enterNameTextfield: UITextField!
     @IBOutlet weak var enterMessageTextfield: UITextField!
+    
     @IBOutlet weak var mailButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         messageLabel.hidden = true
+        nameLabel.hidden = true
+        mailButton.backgroundColor = UIColor.blueColor()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,14 +32,23 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendMailButtonPressed(sender: UIButton) {
+        
+        nameLabel.hidden = false
+        nameLabel.text = "from – " + enterNameTextfield.text
+        nameLabel.textColor = UIColor.blueColor()
+        
         messageLabel.hidden = false
         messageLabel.text = enterMessageTextfield.text
         messageLabel.textColor = UIColor.redColor()
+        
+        enterNameTextfield.text = ""
+        enterNameTextfield.resignFirstResponder()
         
         enterMessageTextfield.text = ""
         enterMessageTextfield.resignFirstResponder()
         
         mailButton.setTitle("Mail sent!", forState: UIControlState.Normal)
+        mailButton.backgroundColor = UIColor.grayColor()
     }
 
 }
